@@ -74,6 +74,14 @@
 
       var label = el.data('label') !== undefined ? el.data('label') : '';
 
+      if (!label.length) {
+        var $label = el.parent().find('label[for="' + el.attr('name') + '"]');
+        if ($label.length) {
+          label = $label.text();
+          $label.remove();
+        }
+      }
+      
       var labelPosition = el.data('labelposition') !== undefined ? 'label' + el.data('labelposition') : 'label' + this.options.labelPosition;
 
       var customClass = el.data('customclass') !== undefined ? el.data('customclass') : this.options.customClass;
