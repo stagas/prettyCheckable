@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="/build/build.css" rel="stylesheet">
+    <script src="/build/build.js"></script>
+    <script>
+      window.onload = function () {
+        var prettyCheckable = require('pretty-checkable')
+        prettyCheckable('#radios input')
+      }
+    </script>
+  </head>
+  <body>
+    <div id="radios">
+      <label for="age-0-17">0-17</label>
+      <input type="radio" id="age-0-17" name="age" value="0-17">
+
+      <label for="age-18-24">18-24</label>
+      <input type="radio" id="age-18-24" name="age" value="18-24">
+    </div>
+  </body>
+</html>
