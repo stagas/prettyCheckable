@@ -75,7 +75,7 @@
       var label = el.data('label') !== undefined ? el.data('label') : '';
 
       if (!label.length) {
-        var $label = el.parent().find('label[for="' + el.attr('name') + '"]');
+        var $label = el.parent().find('label[for="' + el.attr('id') + '"]');
         if ($label.length) {
           label = $label.text();
           $label.remove();
