@@ -1,0 +1,18 @@
+{
+  "name": "pretty-checkable",
+  "repo": "stagas/prettyCheckable",
+  "main": "./prettyCheckable.js",
+  "scripts": [
+    "prettyCheckable.js"
+  ],
+  "styles": ["prettyCheckable.css"],
+  "dependencies": {
+    "component/jquery": "*"
+  },
+  "images": [
+    "prettyCheckable-blue.png",
+    "prettyCheckable-green.png",
+    "prettyCheckable-red.png",
+    "prettyCheckable-yellow.png"
+  ]
+}
