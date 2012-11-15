@@ -1,3 +1,5 @@
+var jQuery = require('jquery');
+
 /*
  *  Project: prettyCheckable
  *  Description: jQuery plugin to replace checkboxes and radios for custom images
@@ -120,5 +122,9 @@
       });
       return this;
     };
+
+    module.exports = function ( el, options ) {
+      return $(el)[pluginName](options)
+    }
 
 }(jQuery, window));
